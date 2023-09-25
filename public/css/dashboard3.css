@@ -1,0 +1,203 @@
+/*The hidden div*/
+.hidden1 {
+    display: none;
+  }
+  
+  .formWrapper1 {
+    width: 83vh;
+      height: 80vh;
+      /* margin: 50px auto; */
+      background-color: #7ba0eb;
+      padding: 20px;
+      border-radius: 8px;
+      position: absolute;
+      top: 10vh;
+      left: 52vh;
+  }
+  
+  #exitButton1 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  /* button, input {
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  } */
+  
+  /*Post Form*/
+  .PostContain1{
+    height: fit-content;
+    display: flex;
+    box-shadow: 0px 187px 75px rgba(0, 0, 0, 0.011), 0px 105px 63px rgba(0, 0, 0, 0.051), 0px 47px 47px rgba(0, 0, 0, 0.091), 0px 12px 26px rgba(0, 0, 0, 0.11), 0px 0px 0px rgba(0, 0, 0, 0.11);
+    border-radius: 9px;
+    background-color: wheat;
+  }
+  
+  .login1-form {
+    width: 350px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 9px 0 0 9px;
+    background-color: #fff;
+  }
+  
+  .header1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 0;
+  }
+  
+  .Posttitle1{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 21px;
+    text-align: center;
+    color: #2B2B2F;
+    margin-bottom: 10px;
+  }
+  
+  .Postdescription1{
+    max-width: 80%;
+    margin: auto;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 14px;
+    text-align: center;
+    color: #5F5D6B;
+  }
+  
+  .input_container1 {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .icon1 {
+    width: 20px;
+    position: absolute;
+    z-index: 99;
+    left: 12px;
+    bottom: 9px;
+  }
+  
+  .input_field1 {
+    width: auto;
+    height: 40px;
+    padding: 0 0 0 40px;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid #e5e5e5;
+    filter: drop-shadow(0px 1px 0px #efefef)
+      drop-shadow(0px 1px 0.5px1 rgba(239, 239, 239, 0.51));
+    transition: all 0.3s1 cubic-bezier(0.151, 0.831, 0.661, 1);
+  }
+  
+  .input_field1:focus {
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 0px 2px #115DFC;
+    background-color: transparent;
+  }
+  
+  .sign1-in_btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 36px;
+    background: linear-gradient(180deg, #4480FF 0%, #115DFC 50%, #0550ED 100%);
+    box-shadow: 0px 0.5px1 0.5px1 #EFEFEF, 0px 1px 0.5px1 rgba(239, 239, 239, 0.51);
+    border-radius: 5px;
+    border: 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #ffffff;
+    transition: all 0.6s1 cubic-bezier(0.151, 0.831, 0.661, 1);
+  }
+  
+  .sign1-in_btn:hover {
+    transform: scale(1.011) translateY(-2px);
+    box-shadow: 0 10px 20px 0#054eed6b;
+  }
+  
+  .testimonial1 {
+    width: 250px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background: linear-gradient(358.31deg1,#fff -24.131%,hsla(0,0%,100%,0) 338.581%),linear-gradient(89.84deg1,rgba(230,36,174,.151) .341%,rgba(94,58,255,.151) 16.961%,rgba(10,136,255,.151) 34.661%,rgba(75,191,80,.151) 50.121%,rgba(137,206,0,.151) 66.221%,rgba(239,183,0,.151) 82%,rgba(246,73,0,.151) 99.91%);
+    border-radius: 0 9px 9px 0;
+  }
+  
+  .testimonial1 p {
+    color: #4d4c6d;
+    font-size: 17px;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .user1-profile-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #00000011;
+  }
+  
+  .Postuser1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+  }
+  
+  .username1 {
+    color: #4d4c6d;
+    font-size: 11px;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .occupation1 {
+    color: rgb(141, 140, 161);
+    font-size: 10px;
+    text-align: center;
+    font-weight: 600;
+  }
+  #image_field{
+    width: 100%;
+    height: auto;
+  }

@@ -1,0 +1,417 @@
+.card {
+  width: 50vh;
+  height: 61vh;
+  border-radius: 20px;
+  background: #1b233d;
+  padding: 5px;
+  overflow: hidden;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px;
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  grid-column: 2/3;
+  align-self: center;
+  }
+  
+  /* .card:hover {
+    transform: scale(1.05);
+  } */
+  
+  .card .top-section {
+    height: 150px;
+    border-radius: 15px;
+    display: flex;
+    background: linear-gradient(45deg, rgb(4, 159, 187) 0%, rgb(80, 246, 255) 100%);
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .top-section img{
+    width: 20%;
+    height: auto;
+  }
+  
+  .card .top-section .border {
+    border-bottom-right-radius: 10px;
+    height: 30px;
+    width: 130px;
+    background: white;
+    background: #1b233d;
+    position: relative;
+    transform: skew(-40deg);
+    box-shadow: -10px -10px 0 0 #1b233d;
+  }
+  
+  .card .top-section .border::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 0;
+    right: -15px;
+    background: rgba(255, 255, 255, 0);
+    border-top-left-radius: 10px;
+    box-shadow: -5px -5px 0 2px #1b233d;
+  }
+  
+  .card .top-section::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background: rgba(255, 255, 255, 0);
+    height: 15px;
+    width: 15px;
+    border-top-left-radius: 15px;
+    box-shadow: -5px -5px 0 2px #1b233d;
+  }
+  
+  .card .top-section .icons {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .card .top-section .icons .logo {
+    height: 100%;
+    aspect-ratio: 1;
+    padding: 7px 0 7px 15px;
+  }
+  
+  .card .top-section .icons .logo .top-section {
+    height: 100%;
+  }
+  
+  .card .top-section .icons .social-media {
+    height: 100%;
+    padding: 8px 15px;
+    display: flex;
+    gap: 7px;
+  }
+  
+  .card .top-section .icons .social-media .svg {
+    height: 100%;
+    fill: #1b233d;
+  }
+  
+  .card .top-section .icons .social-media .svg:hover {
+    fill: white;
+  }
+  
+  .card .bottom-section {
+    margin-top: 15px;
+    padding: 10px 5px;
+  }
+  
+  .card .bottom-section .title {
+    display: block;
+    font-size: 17px;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+  
+  .card .bottom-section .row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .card .bottom-section .row .item {
+    flex: 30%;
+    text-align: center;
+    padding: 5px;
+    color: rgba(170, 222, 243, 0.721);
+  }
+  
+  .card .bottom-section .row .item .big-text {
+    font-size: 12px;
+    display: block;
+  }
+  
+  .card .bottom-section .row .item .regular-text {
+    font-size: 9px;
+  }
+  
+  .card .bottom-section .row .item:nth-child(2) {
+    border-left: 1px solid rgba(255, 255, 255, 0.126);
+    border-right: 1px solid rgba(255, 255, 255, 0.126);
+  }
+.containerback{
+    display: grid;
+    grid-template-columns: 42vh 1fr 1fr;
+    grid-template-rows: 100vh;
+}
+/*body*/
+body{
+  height: 100vh;
+}
+.navi{
+  grid-column: 1/2;
+}
+
+/*Display Card*/
+.display{
+  grid-column: 3/4;
+  align-self: center;
+}
+.cardDisplay{
+  width: 76vh;
+  height: 85vh;
+  background: #FFFFFF;
+  box-shadow: 0px 187px 75px rgba(0, 0, 0, 0.01), 0px 105px 63px rgba(0, 0, 0, 0.05), 0px 47px 47px rgba(0, 0, 0, 0.09), 0px 12px 26px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 11px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 0 20px;
+}
+
+.search-container input {
+  width: 100%;
+  height: 50px;
+  border: 0;
+  outline: none;
+  font-size: 13px;
+}
+
+.categories {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+  padding: 0px 20px 20px 20px;
+}
+
+.categories button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 15px;
+  background: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  box-shadow: 0px 0.5px 0.5px #EFEFEF, 0px 1px 0.5px rgba(239, 239, 239, 0.5);
+  border-radius: 20px;
+  font-weight: 600;
+  color: #171718;
+  transition: all 0.6s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.categories button:hover {
+  transform: scale(1.05) translateY(-3px);
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: scroll;
+}
+
+.results hr {
+  width: 100%;
+  height: 1px;
+  border: 0;
+  background-color: #ECECEC;
+}
+
+.results p {
+  padding: 0 20px;
+}
+
+p.label {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 13px;
+  color: #5F6368;
+}
+
+.results .entry {
+  display: grid;
+  grid-template-columns: 40px 1fr 40px;
+  gap: 12px;
+  padding: 6px 45px;
+  transition: all 0.2s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.results .entry:hover {
+  background-color: #F5F8FE;
+}
+
+.results .results-list .entry:hover .Usercard {
+  background-color: #1763fa;
+}
+
+.results .results-list .entry:hover .icon svg path,
+.results .results-list .entry:hover .icon svg circle {
+  stroke: #ffffff;
+}
+
+.results .results-list .entry:hover label {
+  color: #1763fa;
+}
+
+.results .results-list .entry:hover span {
+  color: #7ba0eb;
+}
+
+.results .results-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.results .entry .icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ECECEC;
+  border-radius: 7px;
+  transition: all 0.2s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.results .entry .desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.results .entry .desc label {
+  display: block;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #171718;
+}
+
+.results .entry .desc span {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+  color: #72767c;
+}
+
+.results .entry .badge {
+  width: 40px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  background: #DDFFDE;
+  border: 1px solid #08581d0e;
+  border-radius: 7px;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 13px;
+  text-align: center;
+  color: #08581D;
+}
+
+.card-footer {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-top: 10px;
+  padding: 0 7px;
+  background: #F8F8F8;
+}
+
+.cardDisplay .action {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cardDisplay .action p {
+  padding-left: 5px;
+}
+
+.card-footer button {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  border: 0;
+  background: #ECECEC;
+  outline: none;
+}
+
+.edit-actions {
+  width: 100%;
+  text-align: right;
+  padding-right: 10px;
+  opacity: 0.6;
+}
+
+/*user*/
+
+.user{
+  width: 62vh;
+    height: 30vh;
+    /* background-color: black; */
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/*Add Button*/
+.button_Add{
+  --main-focus: #2d8cf0;
+  --font-color: #dedede;
+  --bg-color-sub: #222;
+  --bg-color: #323232;
+  --main-color: #dedede;
+  position: relative;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 2px solid var(--main-color);
+  box-shadow: 4px 4px var(--main-color);
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  overflow: hidden;
+  left: 29%;
+    top: 26%;
+}
+
+.button_Add, .button__icon, .button__text {
+  transition: all 0.3s;
+}
+
+.button_Add .button__text {
+  transform: translateX(25px);
+  color: var(--font-color);
+  font-weight: 600;
+}
+
+.button_Add .button__icon {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background-color: var(--bg-color-sub);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
